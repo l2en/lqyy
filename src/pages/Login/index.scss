@@ -1,0 +1,33 @@
+@import 'style/color.scss';
+
+.login-main{
+  width: 100%;
+  height: 500px;
+  background-image: url('/static/images/login-banner.png');
+  display: flex;
+  align-items: center;
+  &-loginPanel{
+    width: 440px;
+    min-height: 400px;
+    background-color: #fff;
+    position: absolute;
+    right: 10%;
+    padding: 30px;
+    &-title{
+      height: 40px;
+      width: 100%;
+      border: 0;
+      border-bottom: 1px #eee solid;
+      display: flex;
+      justify-content: space-between;
+      line-height: 40px;
+      &>span{
+        border: 0;
+        border-bottom: 4px $baseFontColorBlue solid;
+      }
+    }
+    &-main{
+      height: 260px;
+    }
+  }
+}

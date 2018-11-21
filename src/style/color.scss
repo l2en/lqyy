@@ -1,0 +1,33 @@
+// 文字
+$baseFontColorGray: #7d7d7d;
+$baseFontColorRed: #FF062D;
+$baseFontColorBlue: #047CE2;
+
+// 按钮
+$baseBtnbgColorBlue: #2B59A3;
+
+
+.red{
+  color: $baseFontColorRed
+}
+.gray{
+  color: $baseFontColorGray
+}
+.blue{
+  color: $baseFontColorBlue
+}
+.btnbg-Blue{
+  background-color: $baseBtnbgColorBlue
+}
+.btnbg-default{
+  background-color: #fff;
+  border: 1px #7d7d7d solid;
+}
+.btnbg-primary{
+  background-color: $baseBtnbgColorBlue;
+  border: 1px $baseBtnbgColorBlue solid;
+}
+.btnbg-danger{
+  background-color: #FF062D;
+  border: 1px #7d7d7d solid;
+}
