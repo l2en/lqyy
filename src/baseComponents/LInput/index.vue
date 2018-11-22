@@ -6,7 +6,7 @@
     <div class='__input-wrapper' :style="errorStyle">
       <i :class="icoClass"></i>
       <input :type="type" style="width:" :class="inputClass" :placeholder="placeholder"/>
-      <a class="blue pl-5" v-if='suffix' style="border:0;border-left: 1px #eee solid;width:90px">{{suffixText}}</a>
+      <a class="blue pl-5" v-if='suffix' @click='handleClick' style="border:0;border-left: 1px #eee solid;width:90px">{{suffixText}}</a>
     </div>
     <p class="__input-errortips" v-if='isError'>
       <i class="iconfont icon-wraning red mr-5"></i>
@@ -63,6 +63,10 @@ export default {
       return ["__input-wrapper-icon", "iconfont", "gray", `${this.icon}`];
     }
   },
-  methods: {}
+  methods: {
+    handleClick(event){
+      this.$emit('click',event)
+    }
+  }
 };
 </script>

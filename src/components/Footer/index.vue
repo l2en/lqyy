@@ -3,7 +3,7 @@
 
 <template>
   <div class="footer-wrapper">
-    <div class="footer-wrapper-slogan">
+    <div class="footer-wrapper-slogan wd-70">
       <span class="footer-wrapper-slogan-item">
         <img src='~@/assets/ico/footer-fast.png'/>
         <span class="ml-10">品类齐全，轻松购物</span>
@@ -21,7 +21,7 @@
         <span class="ml-10">天天低价，畅选无忧</span>
       </span>
     </div>
-    <div class="footer-wrapper-services">
+    <div class="footer-wrapper-services wd-70">
       <div class="footer-wrapper-services-item" v-for='(item, index) in servicesItems' :key='index'>
         <h3>{{item.title}}</h3>
         <a v-for='(oneItem,index) in item.items' :key='index'>{{oneItem}}</a>
@@ -43,43 +43,36 @@
 </template>
 
 <script>
-
 export default {
-  components:{
-  },
-  data(){
-    return{
-      servicesItems:[
+  components: {},
+  data() {
+    return {
+      servicesItems: [
         {
-          title: '购物指南',
-          items:['积分政策','会员注册','购药流程','安全购药']
+          title: "购物指南",
+          items: ["积分政策", "会员注册", "购药流程", "安全购药"]
         },
         {
-          title: '关于支付',
-          items:['发票制度','支付方式']
+          title: "关于支付",
+          items: ["发票制度", "支付方式"]
         },
         {
-          title: '售后服务',
-          items:['投诉与建议','退款说明','退换货政策']
+          title: "售后服务",
+          items: ["投诉与建议", "退款说明", "退换货政策"]
         },
         {
-          title: '帮助中心',
-          items:['常见问题','密码找回','评价规则']
+          title: "帮助中心",
+          items: ["常见问题", "密码找回", "评价规则"]
         },
         {
-          title: '关于配送',
-          items:['收货验货','配送费用','配送方式','到货时间']
+          title: "关于配送",
+          items: ["收货验货", "配送费用", "配送方式", "到货时间"]
         }
       ]
-    }
+    };
   },
-  props:{
-
-  },
-  methods:{
-
-  }
-  
-}
+  props: {},
+  methods: {}
+};
 </script>
 

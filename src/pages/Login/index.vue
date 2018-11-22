@@ -20,7 +20,7 @@
             <input type="checkbox"/>
             <span>自动登录</span> | <a>忘记密码?</a>
           </div>
-          <l-button type='primary' @click.native="changeError" class="mt-20">登录</l-button>
+          <l-button type='primary' @click="changeError" class="mt-20">登录</l-button>
         </div>
       </div>
     </div>

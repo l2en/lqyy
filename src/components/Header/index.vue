@@ -13,7 +13,7 @@
 
         <span>
           <a class="mr-10">我的商城</a>
-          <a class="mr-10">0532-66025052</a>
+          <a class="mr-10 fs-12"><i class="iconfont icon-phone blue"></i>0532-66025052</a>
           <a class="mr-10">微信公众号</a>
           <a class="mr-10">帮助中心</a>
         </span>

@@ -1,38 +1,44 @@
 <style rel="stylesheet/scss" lang="scss" src='./index.scss' scoped>
-
 </style>
 
 <template>
   <div>
-    <button :class="ButtonClass"><slot></slot></button>
+    <button @click='handleClickLink' :class="ButtonClass"><slot></slot></button>
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    buttonText:{
+    buttonText: {
       type: String,
-      default: ''
+      default: ""
     },
-    type:{
+    type: {
       type: String,
-      default: 'default'
+      default: "default"
     }
   },
-  computed:{
-    ButtonClass(){
-      let btnType = ''
+  computed: {
+    ButtonClass() {
+      let btnType = "";
       switch (this.type) {
-        case 'primary': btnType = 'btnbg-primary';break;
-        case 'danger': btnType = 'btnbg-danger';break;
-        default:  btnType = 'btnbg-default';
+        case "primary":
+          btnType = "btnbg-primary";
+          break;
+        case "danger":
+          btnType = "btnbg-danger";
+          break;
+        default:
+          btnType = "btnbg-default";
       }
-      return [
-        '__Button', 'fs-18', 
-        `${btnType}`
-      ]
+      return ["__Button", "fs-18", `${btnType}`];
     }
+  },
+  methods:{
+    handleClickLink(event) {
+      this.$emit("click", event);
+    },
   }
-}
+};
 </script>
